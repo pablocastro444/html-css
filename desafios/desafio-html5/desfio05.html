@@ -13,24 +13,35 @@
             border-collapse: collapse;
         }
 
-        th, td {
-            border: 1px solid gray;
-            padding: 10px;
+        th {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+            background-color: rgba(79, 73, 73, 0.801);
+            color: white;
         }
 
-        sub { 
-            font-size: 1em;
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left
+        }
+
+        .cor {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+            background-color: white;
+            color: black;
            
-            
-            
         }
 
-        .nota {
-            padding: 10px;
-            border: 1px solid gray;
-            padding-right: 20px;
-            margin-right: 20px;
-            
+        .cor1 {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+            background-color: rgba(79, 73, 73, 0.801);
+            color: white; 
         }
     </style>
 </head>
@@ -38,10 +49,14 @@
     <table>
         <thead>
             <tr>
-                <th class="cor">Área</th>
-                <th class="cor">Disciplina</th>
-                 <th colspan="2" class="cor">Notas<br><sub class="nota">Nota 1 </sub><sub class="nota">Nota 2</sub></th>
-                <th class="cor">Média</th>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplina</th>
+                 <th colspan="2">Notas</th>
+                 <th rowspan="2">Média</th>
+                 <tr>
+                  <th>Notas 1</th> 
+                  <th>Notas 2</th>
+                 </tr>
             </tr>
         </thead>
         <tbody>
@@ -71,8 +86,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" class="cor">Média de Exatas</th>
-                <td>0.0</td>
+                <th colspan="4" class="cor1">Média de Exatas</th>
+                <td class="cor1">0.0</td>
             </tr>
             <tr>
                 <th rowspan="2" class="cor">Humanas</th>
@@ -88,8 +103,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" class="cor">Média de Humanas</th>
-                <td>0.0</td> 
+                <th colspan="4" class="cor1">Média de Humanas</th>
+                <td class="cor1">0.0</td> 
             </tr>
         </tbody>
     </table>
